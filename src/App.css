@@ -63,15 +63,23 @@ table {
   overflow-x: hidden;
 }
 
+#App-header {
+  grid-area: "Heading";
+  margin-top: 10rem;
+}
+
 #content-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 420px);
-  grid-template-rows: repeat(3, 196px);
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: 2rem repeat(3, 652px);
   grid-gap: 30px;
-  grid-template-areas: "Bio1 Bio2 Bio3""Bio4 Bio5 Bio6""Bio7 Bio8 Bio9";
-  height: 1600px;
-  width: 2237px;
+  grid-template-areas: "Heading . .""Bio1 Bio2 Bio3""Bio4 Bio5 Bio6""Bio7 Bio8 Bio9";
+  width: 1600px;
+  height: 2201px;
   margin: 0 auto;
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
 }
 
 img.bio-image {
@@ -86,28 +94,39 @@ img.bio-image {
 .bio-card_wrapper:nth-of-type(2) {
   grid-area: Bio2;
 }
+
 .bio-card_wrapper:nth-of-type(3) {
   grid-area: Bio3;
 }
+
 .bio-card_wrapper:nth-of-type(4) {
   grid-area: Bio4;
 }
+
 .bio-card_wrapper:nth-of-type(5) {
   grid-area: Bio5;
 }
+
 .bio-card_wrapper:nth-of-type(6) {
   grid-area: Bio6;
 }
+
 .bio-card_wrapper:nth-of-type(7) {
   grid-area: Bio7;
 }
+
 .bio-card_wrapper:nth-of-type(8) {
   grid-area: Bio8;
 }
+
 .bio-card_wrapper:nth-of-type(9) {
   grid-area: Bio9;
 }
 
+img.bio-image {
+  width: 370px;
+  height: 420px;
+}
 
 
-.bio-card_expanded {}
+/* .bio-card_expanded {} */

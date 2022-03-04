@@ -17,9 +17,9 @@ const BioCard = (props) => {
         isExpanded ? "bio-card_wrapper bio-card_expanded" : "bio-card_wrapper"
       }
     >
+      <img className="bio-image" src={photo_url} alt={name} />
       <h2>{name}</h2>
       <h3>{title}</h3>
-      <img src={photo_url} alt={name} />
       <span className="bio-link" onClick={handleClick}>
         View Bio
       </span>

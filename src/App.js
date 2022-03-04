@@ -42,8 +42,8 @@ function App() {
 
   return (
     <div id="App-wrapper">
-        <Header />
       <div id="content-wrapper">
+        <Header />
         {bioCards.map((card, index) => <BioCard cardData={card} key={index} gridAreaId={index + 1} />)}
       </div>
     </div>
