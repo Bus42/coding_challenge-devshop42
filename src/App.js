@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import BioCard from './components/BioCard';
+import Header from "./components/Header";
+import { bioCards } from "./data";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {bioCards.map((card, index) => <BioCard image={card.img_small} alt="card.alt" title={card.title} bio={card.bio} key={index} />)}
     </div>
   );
 }
