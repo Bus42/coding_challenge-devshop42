@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CloseButton from "./CloseButton";
 
 const BioCard = (props) => {
   const { name, title, bio, photo_url } = props.cardData;
@@ -6,24 +7,34 @@ const BioCard = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {
-    setIsExpanded(!isExpanded);
+    setIsExpanded(true);
+  };
+
+  const handleClose = () => {
+    setIsExpanded(false);
   };
 
   console.log(gridAreaId);
 
   return (
-    <div
-      className={
-        isExpanded ? "bio-card_wrapper bio-card_expanded" : "bio-card_wrapper"
-      }
-    >
+    <div className="bio-card_wrapper">
+      {isExpanded && (
+        <CloseButton className="close-button" handleClose={handleClose} />
+      )}
       <img className="bio-image" src={photo_url} alt={name} />
-      <h2>{name}</h2>
-      <h3>{title}</h3>
-      <span className="bio-link" onClick={handleClick}>
-        View Bio
-      </span>
-      {isExpanded && <p>{bio}</p>}
+      <div className="card-content_bottom">
+        <div className="bio-heading_wrapper">
+          <h2>{name}</h2>
+          <h3>{title}</h3>
+        </div>
+        {isExpanded ? (
+          <p>{bio.replace(/(<p>)/, "").replace(/<\/p>/, "")}</p>
+        ) : (
+          <span className="bio-link" onClick={handleClick}>
+            View Bio
+          </span>
+        )}
+      </div>
     </div>
   );
 };

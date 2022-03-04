@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <h1 id="App-header" data-testid="App-header">
+    <h1 id="App-header">
       Executive Leadership
     </h1>
   );

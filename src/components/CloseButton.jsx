@@ -1,10 +1,10 @@
 import React from "react";
 
 const CloseButton = (props) => {
-  const { closeModal, index } = props;
+  const { handleClose } = props;
 
   const handleClick = () => {
-    closeModal(index);
+    handleClose();
   };
 
   return (
