@@ -10,59 +10,104 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 
 /* remember to define focus styles! */
 :focus {
-	outline: 0;
+  outline: 0;
 }
 
 /* remember to highlight inserts somehow! */
 ins {
-	text-decoration: none;
+  text-decoration: none;
 }
+
 del {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* END OF RESET */
 
-App-wrapper {
+#App-wrapper {
+  overflow-x: hidden;
+}
+
+#content-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 420px);
   grid-template-rows: repeat(3, 196px);
   grid-gap: 30px;
-  grid-template-areas: "Bio1 Bio2 Bio3" "Bio4 Bio5 Bio6" "Bio7 Bio8 Bio9";
+  grid-template-areas: "Bio1 Bio2 Bio3""Bio4 Bio5 Bio6""Bio7 Bio8 Bio9";
+  height: 1600px;
+  width: 2237px;
+  margin: 0 auto;
 }
 
 img.bio-image {
   width: 370px;
   height: 420px;
 }
+
+.bio-card_wrapper:nth-of-type(1) {
+  grid-area: Bio1;
+}
+
+.bio-card_wrapper:nth-of-type(2) {
+  grid-area: Bio2;
+}
+.bio-card_wrapper:nth-of-type(3) {
+  grid-area: Bio3;
+}
+.bio-card_wrapper:nth-of-type(4) {
+  grid-area: Bio4;
+}
+.bio-card_wrapper:nth-of-type(5) {
+  grid-area: Bio5;
+}
+.bio-card_wrapper:nth-of-type(6) {
+  grid-area: Bio6;
+}
+.bio-card_wrapper:nth-of-type(7) {
+  grid-area: Bio7;
+}
+.bio-card_wrapper:nth-of-type(8) {
+  grid-area: Bio8;
+}
+.bio-card_wrapper:nth-of-type(9) {
+  grid-area: Bio9;
+}
+
+
+
+.bio-card_expanded {}

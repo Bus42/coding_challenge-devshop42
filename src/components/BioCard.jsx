@@ -2,11 +2,14 @@ import React, { useState } from "react";
 
 const BioCard = (props) => {
   const { name, title, bio, photo_url } = props.cardData;
+  const { gridAreaId } = props;
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {
     setIsExpanded(!isExpanded);
   };
+
+  console.log(gridAreaId);
 
   return (
     <div

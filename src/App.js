@@ -41,9 +41,11 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <Header />
-      {bioCards.map((card, index) => <BioCard cardData={card} key={index} />)}
+    <div id="App-wrapper">
+        <Header />
+      <div id="content-wrapper">
+        {bioCards.map((card, index) => <BioCard cardData={card} key={index} gridAreaId={index + 1} />)}
+      </div>
     </div>
   );
 }
