@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const BioCard = (props) => {
-  const { image, alt, name, title, bio } = props;
+  const { name, title, bio, photo_url } = props.cardData;
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {
@@ -16,7 +16,7 @@ const BioCard = (props) => {
     >
       <h2>{name}</h2>
       <h3>{title}</h3>
-      <img src={image} alt={alt} />
+      <img src={photo_url} alt={name} />
       <span className="bio-link" onClick={handleClick}>
         View Bio
       </span>

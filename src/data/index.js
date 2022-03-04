@@ -1,104 +1,66 @@
-import bioImage1Sm from "../assets/images/bio-images_1/Bio-image-1.jpg";
-import bioImage1Lg from "../assets/images/bio-images_1/Bio-image-1@3x.png";
-import bioImage2Sm from "../assets/images/bio-images_2/Bio-image-2.jpg";
-import bioImage2Lg from "../assets/images/bio-images_2/Bio-image-2@3x.png";
-import bioImage3Sm from "../assets/images/bio-images_3/Bio-image-3.jpg";
-import bioImage3Lg from "../assets/images/bio-images_3/Bio-image-3@3x.png";
-import bioImage4Sm from "../assets/images/bio-images_4/Bio-image-4.jpg";
-import bioImage4Lg from "../assets/images/bio-images_4/Bio-image-4@3x.png";
-import bioImage5Sm from "../assets/images/bio-images_5/Bio-image-5.jpg";
-import bioImage5Lg from "../assets/images/bio-images_5/Bio-image-5@3x.png";
-import bioImage6Sm from "../assets/images/bio-images_6/Bio-image-6.jpg";
-import bioImage6Lg from "../assets/images/bio-images_6/Bio-image-6@3x.png";
-import bioImage7Sm from "../assets/images/bio-images_7/Bio-image-7.jpg";
-import bioImage7Lg from "../assets/images/bio-images_7/Bio-image-7@3x.png";
-import bioImage8Sm from "../assets/images/bio-images_8/Bio-image-8.jpg";
-import bioImage8Lg from "../assets/images/bio-images_8/Bio-image-8@3x.png";
-import bioImage9Sm from "../assets/images/bio-images_9/Bio-image-Brooklyn-9.jpg";
-import bioImage9Lg from "../assets/images/bio-images_9/Bio-image-Brooklyn-9@3x.png"
 
-
-
-export const bioCards = [
+export const documents = [
     {
-        id: 1,
-        name: "Brooklyn Hawkins",
-        title: "Chief Executive Officer",
-        img_small: bioImage1Sm,
-        img_large: bioImage1Lg,
-        alt: "Brooklyn Hawkins",
-        bio: "Id ad mollit labore et nisi reprehenderit. Eu voluptate voluptate excepteur culpa labore deserunt proident ullamco cillum minim. Adipisicing consectetur proident dolor officia ex incididunt cillum cillum nostrud voluptate ut culpa excepteur."
+        "_id": "61f041f7b219d8bc46109225",
+        "name": "Brooklyn Hawkins",
+        "title": "Chief Executive Officer",
+        "bio": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/8999/photo_card.jpg"
     },
     {
-        id: 2,
-        name: "Linda Adams",
-        title: "Chief Technology Officer",
-        img_small: bioImage2Sm,
-        img_large: bioImage2Lg,
-        alt: "Linda Adams",
-        bio: "Ullamco tempor velit eu magna magna consequat amet reprehenderit sunt consequat nisi dolore ea exercitation. Quis non eiusmod nostrud sit id elit tempor consectetur amet ex tempor ipsum. Dolor sit dolor esse amet ut commodo reprehenderit est incididunt mollit aliqua veniam fugiat. Adipisicing ipsum ullamco est mollit non consequat irure est enim enim fugiat. Proident mollit exercitation do ad ad sit magna proident aliqua."
+        "_id": "61f041f7b219d8bc46109226",
+        "name": "Jennifer Smith",
+        "title": "Chief Technology Officer",
+        "bio": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/9000/photo_card.jpg"
     },
     {
-        id: 3,
-        name: "Leeroy Jenkins",
-        title: "Chief Operating Officer",
-        img_small: bioImage3Sm,
-        img_large: bioImage3Lg,
-        alt: "Leeroy Jenkins",
-        bio: "Irure dolor dolore voluptate irure duis voluptate ut. Pariatur sit dolore exercitation ad exercitation tempor incididunt pariatur laboris eu quis proident. Ea anim culpa nisi excepteur est velit reprehenderit cillum duis. Aliquip nisi sit qui voluptate officia. Sint aute velit excepteur sunt est fugiat laboris consequat occaecat eu exercitation fugiat cupidatat."
+        "_id": "61f041f7b219d8bc46109227",
+        "name": "Sam Darnold",
+        "title": "Chief Medical Scientist",
+        "bio": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>\r\n<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>\r\n<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/9001/photo_card.jpg"
     },
     {
-        id: 4,
-        name: "Zaphod Beeblebrox",
-        title: "Chief Marketing Officer",
-        img_small: bioImage4Sm,
-        img_large: bioImage4Lg,
-        alt: "Zaphod Beeblebrox",
-        bio: "Deserunt commodo tempor fugiat laboris dolore mollit excepteur qui qui magna laboris. Irure consectetur elit excepteur qui esse proident adipisicing anim eiusmod laboris pariatur non Lorem incididunt. Aliquip magna amet quis Lorem ipsum consequat proident. Irure ut est cillum nulla. Ad nostrud sunt velit do duis non esse adipisicing cillum adipisicing aliquip."
+        "_id": "61f041f7b219d8bc46109228",
+        "name": "Brooklyn Hawkins",
+        "title": "Chief Executive Officer",
+        "bio": "<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href=\"#\">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>\r\n<h2>Header Level 2</h2>\r\n<ol>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>\r\n<li>Aliquam tincidunt mauris eu risus.</li>\r\n</ol>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/9002/photo_card.jpg"
     },
     {
-        id: 5,
-        name: "Arthur Dent",
-        title: "Chief Financial Officer",
-        img_small: bioImage5Sm,
-        img_large: bioImage5Lg,
-        alt: "Arthur Dent",
-        bio: "Laboris est cupidatat Lorem occaecat non nulla duis. Velit reprehenderit esse nostrud nostrud duis esse excepteur dolor ut voluptate sint officia voluptate. Aute eu sint nostrud reprehenderit esse anim fugiat cillum."
+        "_id": "61f041f7b219d8bc46109229",
+        "name": "Joseph Anderson",
+        "title": "Chief Information Security Officer",
+        "bio": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/9003/photo_card.jpg"
     },
     {
-        id: 6,
-        name: "Ford Prefect",
-        title: "Chief Human Resources Officer",
-        img_small: bioImage6Sm,
-        img_large: bioImage6Lg,
-        alt: "Ford Prefect",
-        bio: "Excepteur eiusmod laboris adipisicing occaecat minim culpa do adipisicing et ex occaecat amet eu esse. Cillum irure aute cupidatat id eiusmod pariatur reprehenderit irure. Amet consequat reprehenderit esse duis exercitation. Esse enim eu eu in culpa enim ut. Culpa et enim aute Lorem laborum quis veniam duis eu id labore."
+        "_id": "61f041f7b219d8bc4610922a",
+        "name": "Elena Rodriguez",
+        "title": "Chief Fashion Officer",
+        "bio": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/9004/photo_card.jpg"
     },
     {
-        id: 7,
-        name: "Humma Kavula",
-        title: "Secretary to the Treasury",
-        img_small: bioImage7Sm,
-        img_large: bioImage7Lg,
-        alt: "Humma Kavula",
-        bio: "Commodo ex occaecat voluptate fugiat id id dolor. Nostrud do consectetur non aliqua officia incididunt. Eu minim sit exercitation aute reprehenderit nisi veniam aliquip. Consequat sunt magna pariatur laborum."
+        "_id": "61f041f7b219d8bc4610922b",
+        "name": "Becky \"<html>\" Davis",
+        "title": "Chief Front End Developer",
+        "bio": "<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href=\"#\">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>\r\n<h2>Header Level 2</h2>\r\n<ol>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>\r\n<li>Aliquam tincidunt mauris eu risus.</li>\r\n</ol>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/9005/photo_card.jpg"
     },
     {
-        id: 8,
-        name: "Trisha McMillan",
-        title: "Executive Assistant",
-        img_small: bioImage8Sm,
-        img_large: bioImage8Lg,
-        alt: "Trisha McMillan",
-        bio: "Amet incididunt sit do et commodo dolore consequat est deserunt id amet tempor. Duis ex duis eu irure enim occaecat mollit cillum consectetur qui nulla officia dolor pariatur. Excepteur mollit officia qui ut quis. Reprehenderit id reprehenderit anim ex in. Commodo reprehenderit consequat id eiusmod aliquip cillum. Ex eu culpa mollit officia ex consequat anim consequat pariatur. Sunt do ipsum Lorem commodo ut pariatur dolor elit quis."
+        "_id": "61f041f7b219d8bc4610922c",
+        "name": "Jennifer Smith",
+        "title": "Chief Technology Officer",
+        "bio": "<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href=\"#\">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>\r\n<h2>Header Level 2</h2>\r\n<ol>\r\n<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>\r\n<li>Aliquam tincidunt mauris eu risus.</li>\r\n</ol>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/9006/photo_card.jpg"
     },
     {
-        id: 9,
-        name: "Slartibartfast",
-        title: "Overseer of the Planet",
-        img_small: bioImage9Sm,
-        img_large: bioImage9Lg,
-        alt: "Slartibartfast",
-        bio: "Voluptate reprehenderit cillum qui dolore sunt aute qui minim fugiat sunt. Fugiat consectetur pariatur nisi qui ullamco. Quis et et excepteur minim sint do dolor enim mollit nisi elit aliqua occaecat ad."
-    }        
+        "_id": "61f041f7b219d8bc4610922d",
+        "name": "Sam Darnold",
+        "title": "Chief Medical Scientist",
+        "bio": "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>",
+        "photo_url": "https://content.equisolve.net/_980d98405e0dbb7de1ae927f75143a40/bensdemo/db/1098/9007/photo_card.jpg"
+    }
 ]
