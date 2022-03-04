@@ -28,7 +28,7 @@ const BioDetail = () => {
             />
             <div className="bio-detail_content">
               <div className="bio-detail_top">
-                <h3>{bioCard.name}</h3>
+                <h2>{bioCard.name}</h2>
                 <h6>{bioCard.title}</h6>
               </div>
               <div className="bio-detail_bottom">

@@ -219,6 +219,21 @@ img.bio-image {
   font-weight: 900;
 }
 
+.bio-detail_top {
+  margin-bottom: 1.5rem;
+}
+
+.bio-detail_content {
+  width: 512px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 53px 38px;
+  border: 1px solid orangered;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 #screen {
   position: fixed;
   overflow: hidden;
