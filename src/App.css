@@ -195,3 +195,36 @@ img.bio-image {
   font-weight: 600;
   cursor: pointer;
 }
+
+#bio-detail {
+  position: absolute;
+  top: 725px;
+  left: 771px;
+  width: 1006px;
+  height: 1092px;
+  background-color: #fff;
+  z-index: 900;
+}
+
+#bio-detail::after {
+  content: "x";
+  position: absolute;
+  top: 1rem;
+  right: -1rem;
+  width: 50px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+#screen {
+  position: fixed;
+  overflow: hidden;
+  overflow-y: none;
+  top: -10vh;
+  left: 0;
+  width: 120vw;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 800;
+}

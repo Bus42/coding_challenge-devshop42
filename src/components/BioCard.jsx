@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BioCard = (props) => {
-  const { name, title, photo_url } = props.cardData;
+  const { name, title, photo_url, _id } = props.cardData;
 
   return (
     <div className="bio-card_wrapper">
@@ -11,7 +12,9 @@ const BioCard = (props) => {
           <h3>{name}</h3>
           <h6>{title}</h6>
         </div>
-        <span className="bio-link">View Bio</span>
+        <Link to={`/detail/${_id}`} className="bio-link">
+          View Bio
+        </Link>
       </div>
     </div>
   );
