@@ -24,8 +24,8 @@ const BioCard = (props) => {
       <img className="bio-image" src={photo_url} alt={name} />
       <div className="card-content_bottom">
         <div className="bio-heading_wrapper">
-          <h2>{name}</h2>
-          <h3>{title}</h3>
+          <h3>{name}</h3>
+          <h6>{title}</h6>
         </div>
         {isExpanded ? (
           <p>{bio.replace(/(<p>)/, "").replace(/<\/p>/, "")}</p>

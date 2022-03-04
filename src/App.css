@@ -59,8 +59,23 @@ table {
 
 /* END OF RESET */
 
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@600;900&display=swap');
+
 :root {
   --colors-common-blue: #2541d4;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .close-button {
@@ -87,8 +102,14 @@ div.bio-heading_wrapper {
   justify-content: space-around;
 }
 
-h3 {
+h1, h2 {
+  font-size: 36px;
+}
+
+h6 {
   color: var(--colors-common-blue);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 #App-wrapper {
@@ -100,17 +121,18 @@ h3 {
 
 #App-header {
   grid-area: "Heading";
-  align-self: flex-end;
-  position: relative;
-  top: 1rem;
+  width: 1170px;
+  height: 90px;
+  align-self: flex-start;
+  line-height: 90px;
 }
 
 #content-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 370px);
-  grid-template-rows: 2rem repeat(3, 652px);
+  grid-template-rows: 4rem repeat(3, 652px);
   grid-gap: 30px;
-  grid-template-areas: "Heading . .""Bio1 Bio2 Bio3""Bio4 Bio5 Bio6""Bio7 Bio8 Bio9";
+  grid-template-areas: "Heading Heading Heading""Bio1 Bio2 Bio3""Bio4 Bio5 Bio6""Bio7 Bio8 Bio9";
   width: 1600px;
   height: 2201px;
   justify-content: center;
@@ -168,5 +190,7 @@ img.bio-image {
   height: 420px;
 }
 
-
-/* .bio-card_expanded {} */
+.bio-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
