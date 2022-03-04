@@ -105,12 +105,19 @@ div.bio-heading_wrapper {
 
 h1, h2 {
   font-size: 36px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
 }
 
 h6 {
   color: var(--colors-common-blue);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: 14px;
 }
 
 #App-wrapper {
@@ -196,6 +203,9 @@ img.bio-image {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
 
 #bio-detail {
@@ -208,19 +218,15 @@ img.bio-image {
   z-index: 900;
 }
 
-#bio-detail::after {
-  content: "x";
+.bio-detail_close-button {
   position: absolute;
-  top: 1rem;
-  right: -1rem;
+  top: 1.5rem;
+  right: 0;
   width: 50px;
   height: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-}
-
-.bio-detail_top {
-  margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .bio-detail_content {
@@ -229,9 +235,23 @@ img.bio-image {
   top: 0;
   left: 0;
   padding: 53px 38px;
-  border: 1px solid orangered;
   height: 100%;
   box-sizing: border-box;
+}
+
+.bio-detail_top {
+  margin-bottom: 1.5rem;
+}
+
+.bio-detail_bottom {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.bio-detail_image {
+  position: absolute;
+  top: 227px;
+  right: 105px;
 }
 
 #screen {

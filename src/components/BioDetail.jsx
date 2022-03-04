@@ -20,9 +20,12 @@ const BioDetail = () => {
       <div id="screen" />
       <div id="bio-detail">
         {bioCard ? (
-          <div className="bio-detail_wrapper" onClick={handleClick}>
+          <div className="bio-detail_wrapper">
+            <span className="bio-detail_close-button" onClick={handleClick}>
+              X
+            </span>
             <img
-              className="bioDetail-image"
+              className="bio-detail_image"
               src={bioCard.photo_url}
               alt={bioCard.name}
             />
