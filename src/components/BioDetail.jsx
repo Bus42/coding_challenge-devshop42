@@ -2,12 +2,16 @@ import { useLayoutEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { documents } from "../data";
 import Home from "./Home";
+import parse from "html-react-parser";
 
 const BioDetail = () => {
   const { id } = useParams();
   const [bioCard, setBioCard] = useState({});
   useLayoutEffect(() => {
-    setBioCard(documents.find((card) => card._id === id));
+    const bioCard = documents.find((doc) => doc._id === id);
+    console.log(bioCard.bio);
+    setBioCard(bioCard);
+    
   }, [id]);
 
   const handleClick = () => {
@@ -35,7 +39,7 @@ const BioDetail = () => {
                 <h6>{bioCard.title}</h6>
               </div>
               <div className="bio-detail_bottom">
-                <p>{bioCard.bio?.replace(/(<p>)/, "").replace(/<\/p>/, "")}</p>
+                {bioCard.bio && parse(bioCard.bio)}
               </div>
             </div>
           </div>
