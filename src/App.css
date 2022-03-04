@@ -63,6 +63,7 @@ table {
 
 :root {
   --colors-common-blue: #2541d4;
+  --colors-common-white: #f5f5f5;
 }
 
 body {
@@ -70,7 +71,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
   color: #333;
-  background-color: #f5f5f5;
+  background-color: var(--colors-common-white);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -147,6 +148,7 @@ img.bio-image {
 .bio-card_wrapper {
   width: 370px;
   height: 616px;
+  background-color: white;
 }
 
 .bio-card_wrapper:nth-of-type(1) {
@@ -198,10 +200,10 @@ img.bio-image {
 
 #bio-detail {
   position: absolute;
-  top: 725px;
+  top: 715px;
   left: 771px;
-  width: 1006px;
-  height: 1092px;
+  width: 1039px;
+  height: 1166px;
   background-color: #fff;
   z-index: 900;
 }
