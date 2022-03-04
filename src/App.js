@@ -44,7 +44,7 @@ function App() {
     <div id="App-wrapper">
       <div id="content-wrapper">
         <Header />
-        {bioCards.map((card, index) => <BioCard cardData={card} key={index} gridAreaId={index + 1} />)}
+        {bioCards.map((card, index) => <BioCard cardData={card} key={index} />)}
       </div>
     </div>
   );
